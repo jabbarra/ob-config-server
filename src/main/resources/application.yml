@@ -8,3 +8,8 @@ spring:
             server:
                 git:
                     uri: https://github.com/jabbarra/repository-config.git
+                    search-paths:
+                        - product-service
+                        - item-service
+                        - obcm
+                        - puv
