@@ -12,3 +12,6 @@ before_install:
   - chmod +x gradlew
   - echo $JAVA_HOME
   - java --version
+
+script:
+  - ./gradlew sonarqube
