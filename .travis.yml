@@ -2,6 +2,9 @@ language: java
 dist: trusty
 jdk:
   - oraclejdk14
+addons:
+  sonarcloud:
+    organization: "jabbarra"
 cache:
   directories:
     - ~/.gradle
