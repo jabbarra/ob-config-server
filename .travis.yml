@@ -1,5 +1,7 @@
 language: java
-
+dist: trusty
+jdk:
+  - oraclejdk14
 cache:
   directories:
     - ~/.gradle
