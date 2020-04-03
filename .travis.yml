@@ -5,3 +5,7 @@ jdk:
 cache:
   directories:
     - ~/.gradle
+before_install:
+  - chmod +x mvnw
+  - echo $JAVA_HOME
+  - java --version
