@@ -14,4 +14,4 @@ before_install:
   - java --version
 
 script:
-  - ./gradlew sonarqube --stacktrace
+  - ./gradlew sonarqube
