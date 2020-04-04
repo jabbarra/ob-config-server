@@ -14,4 +14,4 @@ before_install:
   - java --version
 
 script:
-  - ./gradlew clean check sonarqube  --stacktrace
+  - ./gradlew clean check sonarqube  -i

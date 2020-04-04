@@ -40,13 +40,15 @@ test {
 jacocoTestCoverageVerification {
 	violationRules {
 		rule {
-			element = 'CLASS'
 			limit {
 				counter = 'LINE'
 				value = 'COVEREDRATIO'
 				minimum = 1.0
 			}
-
+			element = 'METHOD'
+			excludes = [
+					'com.obarra.obconfigserver.ObConfigServerApplication.main(java.lang.String[])'
+			]
 		}
 	}
 }
