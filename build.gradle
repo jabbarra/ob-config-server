@@ -52,3 +52,10 @@ sonarqube {
 		property "sonar.projectKey", "jabbarra_ob-config-server"
 	}
 }
+
+
+jacocoTestReport {
+	reports {
+		xml.enabled true
+	}
+}
