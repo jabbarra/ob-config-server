@@ -59,3 +59,11 @@ jacocoTestReport {
 		xml.enabled true
 	}
 }
+
+subprojects {
+	sonarqube {
+		properties {
+			property "sonar.sources", "src"
+		}
+	}
+}
