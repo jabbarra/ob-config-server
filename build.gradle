@@ -2,13 +2,8 @@ plugins {
 	id 'org.springframework.boot' version '2.2.6.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id 'jacoco'
 	id "org.sonarqube" version "2.8"
-}
-
-sonarqube {
-	properties {
-		property "sonar.projectKey", "jabbarra_ob-config-server"
-	}
 }
 
 group = 'com.obarra'
@@ -36,6 +31,24 @@ dependencyManagement {
 	}
 }
 
+check.dependsOn jacocoTestCoverageVerification
+
 test {
 	useJUnitPlatform()
+}
+
+jacocoTestCoverageVerification {
+	violationRules {
+		rule {
+			limit {
+				minimum = 0.1
+			}
+		}
+	}
+}
+
+sonarqube {
+	properties {
+		property "sonar.projectKey", "jabbarra_ob-config-server"
+	}
 }

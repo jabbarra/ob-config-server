@@ -8,6 +8,9 @@ class ObConfigServerApplicationTests {
 
 	@Test
 	void contextLoads() {
+		//ObConfigServerApplication.main(new String[]{"der", "de"});
 	}
+
+
 
 }
