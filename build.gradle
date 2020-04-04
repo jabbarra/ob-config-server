@@ -41,29 +41,14 @@ jacocoTestCoverageVerification {
 	violationRules {
 		rule {
 			limit {
-				minimum = 0.1
+				minimum = 0.9
 			}
 		}
 	}
 }
 
-sonarqube {
-	properties {
-		property "sonar.projectKey", "jabbarra_ob-config-server"
-	}
-}
-
-
 jacocoTestReport {
 	reports {
 		xml.enabled true
-	}
-}
-
-subprojects {
-	sonarqube {
-		properties {
-			property "sonar.sources", "src"
-		}
 	}
 }
