@@ -13,7 +13,7 @@ sonarqube {
 
 group = 'com.obarra'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '14'
+sourceCompatibility = '11'
 
 repositories {
 	mavenCentral()
