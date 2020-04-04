@@ -46,9 +46,7 @@ jacocoTestCoverageVerification {
 				value = 'COVEREDRATIO'
 				minimum = 1.0
 			}
-			excludes = [
-					'com.obarra.obconfigserver.*'
-			]
+
 		}
 	}
 }
