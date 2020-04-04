@@ -11,5 +11,3 @@ spring:
                     search-paths:
                         - product-service
                         - item-service
-                        - obcm
-                        - puv
