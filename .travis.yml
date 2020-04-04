@@ -14,4 +14,4 @@ before_install:
   - java --version
 
 script:
-  - ./gradlew clean jacocoTestReport sonarqube  --stacktrace
+  - ./gradlew clean check sonarqube  --stacktrace
