@@ -38,6 +38,11 @@ test {
 	useJUnitPlatform()
 }
 
+
+tasks.withType(Checkstyle) {
+	exclude '**/*Application*'
+}
+
 jacocoTestCoverageVerification {
 	violationRules {
 		rule {
