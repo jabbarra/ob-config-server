@@ -69,6 +69,7 @@ jacocoTestCoverageVerification {
 	}
 }
 
+
 jacocoTestReport {
 	reports {
 		xml.enabled true
